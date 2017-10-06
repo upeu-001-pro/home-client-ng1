@@ -24,7 +24,7 @@ var config = {
     js: ['./src/app/*.js', './src/app/**/*.js'],
     css: ['./src/content/*.css', './src/content/**/*.css'],
     html: ['./src/app/views/*.html', './src/app/views/**/*.html'],
-    htmldirectives: ['./app/directives/*.html', './app/directives/**/*.html'],
+    htmldirectives: ['./src/app/directives/*.html', './src/app/directives/**/*.html'],
     images: './src/media/**/*',
     htmlindex: ['./public/index.html',],
     dest: './public/dist',
