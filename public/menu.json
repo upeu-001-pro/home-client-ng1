@@ -1,0 +1,60 @@
+{
+
+    "menu": [
+
+        {
+            "title": "Dashboard",
+            "state": "catalogo.dashboard",
+            "type": "link"
+        },
+
+
+        {
+            "title": "U.I.",
+            "type": "toggle",
+            "state": "ui",
+            "menu_items": [{
+                "title": "Test 1 uno más",
+                "state": "ui.test1",
+                "type": "link"
+            }, {
+                "title": "2Test 2",
+                "state": "ui.test2",
+                "type": "link"
+            }, {
+                "title": "Test 3",
+                "state": "ui.test3",
+                "type": "link"
+            }, {
+                "title": "Test 4",
+                "state": "ui.test4",
+                "type": "link"
+            }, {
+                "title": "Test 5",
+                "state": "ui.test5",
+                "type": "link"
+            }, {
+                "title": "Test Directivas",
+                "state": "ui.dir",
+                "type": "link"
+            }]
+        },
+
+
+        {
+            "title": "Catálogo",
+            "type": "toggle",
+            "state": "catalogo.catalogo",
+            "menu_items": [{
+                "title": "Categorías",
+                "state": "catalogo.catalogo.categorias",
+                "type": "link"
+            }, {
+                "title": "Autores",
+                "state": "catalogo.catalogo.autores",
+                "type": "link"
+            }]
+        }
+    ]
+
+}

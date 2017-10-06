@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="home">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <title ng-bind="$state.current.data.section + ($state.current.data.section === Null ? '' : ' > ') +
+        $state.current.data.page">
+    </title>
+    <link href="data:image/x-icon;base64,AAABAAEAEBACAAAAAACwAAAAFgAAACgAAAAQAAAAIAAAAAEAAQAAAAAAQAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAaWlpAAAAAAAAAAAAAAAAAAGAAAADwAAABaAAAApQAAASSAAAJCQAAH/+AAAkJAAAEkgAAA/wAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD+fwAA/D8AAPpfAAD1rwAA7bcAANvbAACAAQAA29sAAO23AADwDwAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon" />
+    <meta name="viewport" content="initial-scale=1" />
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" type="text/css" />
+    <link rel="stylesheet" href="bower_components/angular-material-icons/angular-material-icons.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/angular-toastr/dist/angular-toastr.css" />
+    <link rel="stylesheet" href="bower_components/angular-material-pagination/dist/angular-material-pagination.css" type="text/css" />
+    <link rel="stylesheet" href="bower_components/angular-material-responsive-tables/dist/angular-material-responsive-tables.css" type="text/css" />
+    <link rel="stylesheet" href="dist/bundle.css" type="text/css" />
+</head>
+
+<body>
+    <div class="app" ui-view ng-controller="MainCtrl" md-theme="{{ dynamicTheme }}"></div>
+    <!-- 3rd-Party packages -->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="bower_components/angular-material/angular-material.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="bower_components/angular-material-icons/angular-material-icons.min.js"></script>
+    <script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+    <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+    <!-- my commponents   -->
+    <script src="bower_components/angular-oauth2-frontend/dist/angular-oauth2-frontend.js"></script>
+    <script src="bower_components/angular-material-pagination/dist/angular-material-pagination.tpls.js"></script>
+    <script src="bower_components/angular-material-responsive-tables/dist/angular-material-responsive-tables.js"></script>
+    <!-- home_web app -->
+    <script src="dist/bundle.min.js"></script>
+    <!--
+    <script src="app/app.js"></script>
+    <script src="app/config.js"></script>
+    <script src="app/router.js"></script>
+    <script src="app/controllers/main.js"></script>
+    
+    <script src="app/services/menuService.js"></script>
+    <script src="app/services/catalogoService.js"></script>
+    <script src="app/controllers/categorias.js"></script>
+    <script src="app/controllers/autores.js"></script>
+    -->
+</body>
+
+</html>

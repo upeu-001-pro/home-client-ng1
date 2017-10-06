@@ -1,0 +1,12 @@
+# deactivate directory "src" for production deploy
+#src
+*.pyc
+ve_*
+*- copia*
+node_modules
+bower_components
+~*
+
+xtest_
+
+ 

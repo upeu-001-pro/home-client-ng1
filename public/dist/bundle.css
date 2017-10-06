@@ -1,0 +1,16 @@
+/**
+ * home_web - Un cliente resource server asegurado con OAuth2
+ * @author practian
+ * @version v1.0.0
+ * @link 
+ * @license ISC
+ */
+.app {
+    height: 100%;
+}
+
+@media (min-width: 992px) {
+    md-sidenav.folded {
+        width: 0px;
+    }
+}
