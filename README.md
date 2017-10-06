@@ -1,6 +1,6 @@
 # home-client-ng1
 
-home-client-ng1 es home site corporativo y también es un **Client application** construido en Angular para consumir los servicios de [Catalogo resource server] autorizado por el [Authorization server] cumpliendo así con una aplicación SSO.
+home-client-ng1 es home site corporativo y también es un **Client application** construido en Angular para consumir los servicios REST de [Catalogo resource server] autorizado por el [Authorization server] cumpliendo así con una aplicación SSO.
 
 
 ![Image of Yaktocat](https://github.com/upeu-001-pro/home-client-ng1/blob/master/doc/e4-client_app_home_web.png)
@@ -91,18 +91,13 @@ Run
 ```sh
 	app
 		//====================================================
-		// oauth2Service and menuService runing
+		// oauth2Service  runing
 		//====================================================
-	.run(function(oauth2Service, menuService, $state, $rootScope, $location, authUrl, $window, userService) {
-
-	    menuService.menuUrl = "menu.json";
-	    //menuService.apiMenuUrl = "https://upeuauth-serve.herokuapp.com/api/oauth2_backend/usermenu/";
-	    $rootScope.menu = menuService.getMenu();
-
-	    oauth2Service.loginUrl = authUrl + "/o/authorize/";
-	    oauth2Service.oidcUrl = authUrl + "/api/oauth2_backend/localuserinfo/";
-	    oauth2Service.clientId = "RBzvAoW3dtySxnPob5TuQgINV3yITSVE5bevdosI"; // actualice su client_id
-	    oauth2Service.scope = "home"; //comentar si no está configurado
+	.run(function(oauth2Service, $state, $rootScope, $location, authUrl, $window, userService) {
+		oauth2Service.loginUrl = authUrl + "/o/authorize/";
+		oauth2Service.oidcUrl = authUrl + "/api/oauth2_backend/localuserinfo/";
+		oauth2Service.clientId = "KBszLKA46J3hd2xzs1oGgRXftPH8tswTI47uMif5"; //posgres de heroku
+		oauth2Service.scope = "home"; //comentar si no está configurado
 	    ...
 ```
 
@@ -137,4 +132,4 @@ See https://github.com/upeu-001-pro/home-client-ng1/graphs/contributors
 
 
 [Authorization server]:  https://github.com/upeu-001-pro/upeuauth-serve
-[Catalogo resource server]:  https://github.com/upeu-001-pro/home-serve
+[Catalogo resource server]:  https://github.com/upeu-001-pro/catalogo-serve
